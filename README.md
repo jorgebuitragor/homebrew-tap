@@ -1,8 +1,11 @@
 # Tap de Homebrew de jorgebuitragor
 
 ```bash
+brew trust jorgebuitragor/tap
 brew install --cask jorgebuitragor/tap/margin
 ```
+
+Homebrew pide confiar una vez en un tap que no es oficial antes de instalar desde él (`brew trust`).
 
 | Cask | Qué es |
 | --- | --- |
