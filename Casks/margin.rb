@@ -31,6 +31,13 @@ cask "margin" do
   ]
 
   caveats <<~EOS
-    Margin no está notarizada por Apple: la primera vez ábrela con clic derecho › Abrir.
+    Margin no está notarizada por Apple, así que macOS la deja en cuarentena:
+      - La app: la primera vez ábrela con clic derecho › Abrir.
+      - El comando `margin` (y su servidor MCP) no funciona mientras siga en cuarentena:
+        macOS lo cierra o avisa de que no se pudo abrir. Si confías en Margin, antes de
+        usarlo quítale la cuarentena:
+          xattr -dr com.apple.quarantine "#{appdir}/Margin.app"
+        Si ves ese aviso de macOS, pulsa «Aceptar»: «Mover a la Papelera» manda la app
+        entera a la Papelera.
   EOS
 end
