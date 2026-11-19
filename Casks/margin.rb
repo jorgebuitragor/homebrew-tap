@@ -1,6 +1,6 @@
 cask "margin" do
-  version "0.10.0"
-  sha256 "4211ec5dd398297af0e31517d9805df9490542bf0c56d632e5263e1a76676c58"
+  version "0.10.1"
+  sha256 "4281f9265880dd2c5f9d1916f2a8438c7916c40159e2e773a7ecfbd8815c00f6"
 
   url "https://github.com/jorgebuitragor/margin/releases/download/v#{version}/Margin.dmg"
   name "Margin"
